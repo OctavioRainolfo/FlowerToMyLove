@@ -1,9 +1,8 @@
-# React + Vite
+This is a project I've created as a surprise for my girlfriend.
+In fact, the best way I know how to express my feelings may be through coding.
+I hope this touches her heart because she touches mine every day.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-"# FlowerToMyLove" 
+To run it:
+ - npm i
+ - npm run dev
