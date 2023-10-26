@@ -13,6 +13,7 @@ function App() {
   const [isClickedBranco, setIsClickedBranco] = useState(false)
   const [isClickedRosa, setIsClickedRosa] = useState(false)
 
+  const validateIsClicked = isClickedAzul || isClickedBranco || isClickedRosa
 
   return (
     <div className="App">
@@ -20,8 +21,8 @@ function App() {
         <>
           {!isClicked && (
             <>
-              <p>Você recebeu uma e-flor!!!</p>
               <img src={alert} />
+              <p>Você recebeu uma e-flor!!!</p>
               <button onClick={setIsClicked}>
                 Clique aqui para aceita-lá
               </button>
@@ -81,7 +82,7 @@ function App() {
           {isClickedRosa && (
             <div className={`flower ${isClickedRosa ? 'show' : ''}`}>
               <p>
-              I Would be the happiest person alive if I could spend the rest of my life by your side.
+                I Would be the happiest person alive if I could spend the rest of my life by your side.
               </p>
               <p>
                 ❤
@@ -89,20 +90,19 @@ function App() {
               <p>Would you visite the tulip fields with me?</p>
               <img src={tulipa} />
             </div>
-            )}
-            
-            {isClickedAzul || isClickedBranco || isClickedRosa && (
-              <button onClick={
-                () => {
-                  setClickedAzul(false)
-                  setIsClickedBranco(false)
-                  setIsClickedRosa(false)
-                  setIsClicked(false)
-                }
-              }>
-                Voltar ao início
-              </button>
-              )}
+          )}
+
+          {validateIsClicked && (
+            <button onClick={() => {
+              setClickedAzul(false)
+              setIsClickedBranco(false)
+              setIsClickedRosa(false)
+            }}>
+              Voltar
+            </button>
+          )}
+
+
 
         </>
       )}
