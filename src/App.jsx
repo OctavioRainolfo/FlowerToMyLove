@@ -101,7 +101,8 @@ function App() {
                 }
               }>
                 Voltar ao início
-              </button>}
+              </button>
+              )}
 
         </>
       )}
