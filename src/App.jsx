@@ -89,7 +89,19 @@ function App() {
               <p>Would you visite the tulip fields with me?</p>
               <img src={tulipa} />
             </div>
-          )}
+            )}
+            
+            {isClickedAzul || isClickedBranco || isClickedRosa && (
+              <button onClick={
+                () => {
+                  setClickedAzul(false)
+                  setIsClickedBranco(false)
+                  setIsClickedRosa(false)
+                  setIsClicked(false)
+                }
+              }>
+                Voltar ao início
+              </button>}
 
         </>
       )}
